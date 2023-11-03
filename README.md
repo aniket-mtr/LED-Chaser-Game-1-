@@ -156,7 +156,7 @@ components
   <summary>Detail</summary><br>
   <b>Testbench</b> <br><br>
 
-
+```
 module testbench_LED_Game;
 
   // Inputs
@@ -234,12 +234,12 @@ module testbench_LED_Game;
   end
 
 endmodule
-
+```
 
 
 <b>Module File</b>
 
-
+```
 module LED_Game (
     input wire clk,              // Clock input
     input wire reset,            // Reset input
@@ -350,6 +350,6 @@ end
 
 endmodule
 
-
+```
 </details>
 <br><br>
