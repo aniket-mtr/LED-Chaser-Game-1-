@@ -1,4 +1,4 @@
-# S1-T23-LED Chaser Game
+# LED Chaser Game
 *This repository contains everything related to our project on the LED Chaser Game , ranging from Verilog Code and Logisim to theoretical descriptions.*
 <br><br>
 <h2><b>Team Details</b></h3>
