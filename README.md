@@ -147,7 +147,8 @@ components
 <h2><b>Logisim Circuit Diagram</b></h2>
 <details>
   <summary>Detail</summary><br>
-  ![logisim](https://github.com/aniket-mtr/LED-Chaser-Game-1-/assets/119874419/d4791e6a-a139-4acd-bbbc-64386e74670c)
+  ![Logisim](https://github.com/aniket-mtr/LED-Chaser-Game-1-/assets/119874419/0d383d18-6a68-4d9e-b95f-9c00f8ec9ce0)
+
 
 </details>
 <br><br>
