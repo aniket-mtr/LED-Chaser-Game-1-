@@ -87,56 +87,54 @@ components
     <td align="center"><b>WORKING/ROLE</b></td>
   </tr>
   <tr>
-    <td align="center">JK flip flop</td>
-    <td align="center">On the first clock pulse, the J input is 1 and the K input is 1. This causes the flipflop to toggle its state, so the Q output goes from 0 to 1. 
-        On the next clock pulse, the Q output is now 1, so it sets the J input to 1, and 
-        the complement of Q (Q') is 0, setting the K input to 0. With these inputs, the 
-        flip-flop toggles again, and the Q output goes from 1 to 0. 
-        This process repeats with every clock pulse, resulting in the generation of 
-        alternate 0s and 1s at the Q output. 
-        This results in the sequential glowing of LEDs in a pattern. One JK flip flop 
+    <td align="center">Generation of signals to light up LEDs using JK flip flops</td>
+    <td align="center">
+        The triggering of JK flip flops leads to toggling outputs which further leads to the sequential glowing of LEDs in a pattern. One JK flip flop 
         influences the input of the other JK flip flops in the same sequence for a 
-        particular column with synchronized clock pulse. So I have repeated the same 
-        combination of JK flip flops for all three columns but in random manner which is 
-        totally dependent on the reset button of the JK flip flop. Whenever I want to 
-        start the game, I have to toggle the reset button at different clock time to 
+        particular column with synchronized clock pulse. So we have repeated the same 
+        combination of JK flip flops for all three columns, but in a random manner which is 
+         dependent on the reset button of the JK flip flop. Whenever we want to 
+        start the game, we have to toggle the reset button at different clock time to 
         randomize the pattern. </td>
   </tr>
   <tr>
-    <td align="center">AND gate</td>
-    <td align="center">To change the sequence in the pattern, I have used AND gates. 
-        AND gate is also used to test whether the user has pushed the correct button in 
-        the correct column when the last LED glows.</td>
+    <td align="center">Usage of 4 input AND gates</td>
+    <td align="center">One 4 input AND gate is used as an input to the clear pins of the JK flip flops to reset them to zero.
+        The other 4 input AND gates help to transfer randomized signals from the flip flops to the LEDS as they are connected from the flip flop
+        outputs to the LEDs.</td>
+        
   </tr>
   <tr>
-    <td align="center">Bit Counter</td>
-    <td align="center">This is totally dependent on the AND gate. Whenever the user enters the correct 
+    <td align="center">Usage of 2 input AND gates</td>
+    <td align="center">2 input AND gates take the input from the 4 input AND gates and the push-button switches. If the push-button and the LED (coming from
+        4 input AND gate) is high at the same time, the counter is increased since the output of the 2 input AND gate is high. But we make sure that counter is increased 
+        only in case of the special LED buttons being pressed.</td>
+        
+  </tr>
+  <tr>
+    <td align="center">Usage of Bit Counter</td>
+    <td align="center"> Whenever the user enters the correct 
         combination for the correct led the output of the particular column AND gate 
         becomes high. 
         Whenever the output of AND gate is high the input of counter will increase by 
         one according to the clock which is applied on it. 
         To display the output of that counter we use another hex display decoder and a 
-        reset button to reset the counter whenever I want to stop the game.</td>
+        reset button to reset the counter whenever we want to stop the game.</td>
   </tr>
   <tr>
-    <td align="center"> Bit Splitter</td>
-    <td align="center">As we can see the counter data output is 8 bit and the hex display decoder input is 
-        4 bit so use bit splitter to display the number.I have used bit splitter 
+    <td align="center">Usage of Bit Splitter</td>
+    <td align="center">The counter data output is 8 bit and the hex display decoder input is 
+        4 bit so we use bit splitter to display the number. We have used bit splitter 
         to fan in 8 bit input and fan out into 2 bit output for input of each decoder.</td>
   </tr>
   <tr>
-    <td align="center">push button</td>
-    <td align="center">Push button is used to take the input from the user to play the game.</td>
+    <td align="center">Simple push button switches</td>
+    <td align="center">A Push button switch is used to take the input from the user while the LEDs are lighting up.</td>
   </tr>
   <tr>
-    <td align="center">LED</td>
-    <td align="center">LEDs are the main component of the game; without it we cannot make the user 
-        understand the pattern of glowing of LEDs.</td>
-  </tr>
-  <tr>
-    <td align="center">Clock</td>
+    <td align="center">Clock for Flip Flops and Counter</td>
     <td align="center">Clock controls the basic sequence changing from 0 to 1 and vice versa on a 
-        particular tick frequency given by a user. </td>
+        particular tick frequency given by a user. A 555 timer IC can be used to generate clock pulses</td>
   </tr>
 </table>
 <br><br>
