@@ -10,7 +10,6 @@
   <b>Member-2: </b>DIVYANSHU MANOJBHAI SURTI, 221CS157, surtidivanshumanojbhai.221cs17@nitk.edu.in <br><br>
   <b>Member-3: </b>HARSHITHA GOLLAPALLI, 221CS124, gollpalliharshitha.221cs124@nitk.edu.in <br>
 </details>
-<br>
 <h2><b>Abstract</b></h1>
 <details>
   <summary>Detail</summary><br>
@@ -74,7 +73,6 @@ Helped to fix errors in the brainstorming session
 and recommended better set of hardware 
 components
 </details>
-<br>
 <h2><b>Working</b></h2>
 <details>
   <summary>Detail</summary>
@@ -141,7 +139,6 @@ components
 <h2 align="center"><b>Flowchart</b></h2><br>
  <br>![Flowchart](https://github.com/aniket-mtr/LED-Chaser-Game-1-/assets/119874419/a2f6bcb2-516e-4fc5-aca2-2d0c6c1d0cc3) <br>
 </details>
-<br><br>
 <h2><b>Logisim Circuit Diagram</b></h2>
 <details>
   <summary>Detail</summary><br>
@@ -149,7 +146,6 @@ components
 
 
 </details>
-<br><br>
 <h2><b>Verilog Code</b></h2>
 <details>
   <summary>Detail</summary><br>
