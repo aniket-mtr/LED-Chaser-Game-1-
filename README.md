@@ -137,11 +137,14 @@ components
 </table>
 <br><br>
 <h2 align="center"><b>Flowchart</b></h2><br>
+
  <br>![Flowchart](https://github.com/aniket-mtr/LED-Chaser-Game-1-/assets/119874419/a2f6bcb2-516e-4fc5-aca2-2d0c6c1d0cc3) <br>
+ 
 </details>
 <h2><b>Logisim Circuit Diagram</b></h2>
 <details>
   <summary>Detail</summary><br>
+  
   ![Logisim](https://github.com/aniket-mtr/LED-Chaser-Game-1-/assets/119874419/0d383d18-6a68-4d9e-b95f-9c00f8ec9ce0)
 
 
